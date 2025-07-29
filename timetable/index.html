@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Timetable Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>📅 Automatic Timetable Generator</h1>
+    <p>With Teachers, Timings, Print, and Class-specific Subjects</p>
+  </header>
+
+  <section class="form-section">
+    <h2>Enter Subjects and Teachers</h2>
+    <div class="subject-boxes">
+      <div>
+        <h3>Class A Subjects</h3>
+        <textarea id="classAInput" placeholder="e.g., Math:Mr. Smith, English:Ms. Rose"></textarea>
+      </div>
+      <div>
+        <h3>Class B Subjects</h3>
+        <textarea id="classBInput" placeholder="e.g., Science:Dr. Ray, History:Mr. Mark"></textarea>
+      </div>
+      <div>
+        <h3>Class C Subjects</h3>
+        <textarea id="classCInput" placeholder="e.g., Art:Ms. Lily, PE:Coach John"></textarea>
+      </div>
+    </div>
+    <button onclick="generateTimetable()">Generate Timetable</button>
+    <button onclick="window.print()">🖨️ Print / Save as PDF</button>
+  </section>
+
+  <section id="tables">
+    <!-- Timetables will appear here -->
+  </section>
+
+  <footer>
+    <p>© 2025 EduDev | All rights reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
